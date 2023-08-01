@@ -1,11 +1,11 @@
 # Title Password Validation RegEx
 
-Introductory paragraph (replace this with your text)
+This document covers the indiviudal parts and components of this regex:
 "​^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
 
 ## Summary
 ​
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This regex makes sure a password equals 8 characters, upper case, lower case, numbers, letters, and special characters.
 ​
 ## Table of Contents
 ​

@@ -1,7 +1,7 @@
 # Title Password Validation RegEx
 
 This document covers the indiviudal parts and components of this regex:
-"​^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+"​^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/g"
 
 ## Summary
 ​
@@ -32,16 +32,16 @@ Our second one is the dollar sign. This tells our regex to stop at the end of a 
 ​(?=.*[A-Z]) Our regex contains several of these grouping constructs. Each of them dictates which characters our passwords should have. 
 
 ### Bracket Expressions
-​
+​[A-Za-z\d@$!%*?&] Bracket expressions like this one specify exactly what character our regex is looking for. This particular one specifies that our regex should have uppercase, lower case, numbers, and symbols. 
 
 ### Character Classes
-​
+​[A-Z] Character classes tells regex to watch for a range of characters. This particular character class tells regex to watch for characters, upper case letters A-Z.
 
 ### The OR Operator
-​
+​This regex does not have an OR operator. 
 
 ### Flags
-​
+​Flags tell regex how far to search. The global or g flag tells regex to search the entire string.
 
 ### Character Escapes
 ​
